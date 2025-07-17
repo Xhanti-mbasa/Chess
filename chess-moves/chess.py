@@ -12,6 +12,9 @@ def parse_fen(fen):
     return ...
 
 
+
+
+
 def generate_moves(board):
     raise NotImplementedError("This function is not implemented yet.")
 
