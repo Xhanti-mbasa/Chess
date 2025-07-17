@@ -12,7 +12,7 @@ def parse_fen(fen):
     return ...
 
 
-
+print()
 
 
 def generate_moves(board):
