@@ -1,19 +1,15 @@
-def parse_fen(fen):
-    fen_pieces, to_move, castling_rights, ep, hm, fm = fen.split(" ")
-    pieces = [[]]
-    for char in fen:
-        if char.isdigit():
-            pieces[-1].extend(["."] * int(char))
-        elif char == "/":
-            pieces.append([])
-        else:
-            pieces[-1].append(char)
+grid = [["#"]*8 for _ in range(8)]
+grid[0] = ["R", "N", "B", "Q", "K", "B", "N", "R"]
+grid[1] = ["P"] * 8
 
-    return ...
-    
-def generate_moves(board):
-    raise NotImplementedError("This function is not implemented yet.")
+grid[6] = ["p"] * 8
+grid[7] = ["r", "n", "b", "q", "k", "b", "n", "r"]
 
+columns = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+print(" "+" ".join(columns))
 
-def apply_move(board, move):
-    raise NotImplementedError("This function is not implemented yet.")
+for i in range(8):
+    row_num = 8 - i
+
+    row = grid[i]
+    print(f"{row_num}"+"".join(row))
