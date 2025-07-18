@@ -26,7 +26,7 @@ def move_pawn(start, end):
 
     if piece == "P" and sc == ec and grid[er][ec] in [" ", "#"] and sr - 1 == er:
         grid[er][ec] = "P"
-        # Restore the original color for the now empty square
+        # replacing the block of the block we just moved from.
         grid[sr][sc] = " " if (sr + sc) % 2 == 0 else "#"
     elif piece == "p" and sc == ec and grid[er][ec] in [" ", "#"] and sr + 1 == er:
         grid[er][ec] = "p"
