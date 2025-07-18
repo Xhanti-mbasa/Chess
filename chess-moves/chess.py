@@ -1,4 +1,4 @@
-# Create 8x8 grid with alternating colors:
+
 grid = [[" " if (row + col) % 2 == 0 else "#" for col in range(8)] for row in range(8)]
 
 # Place pieces (uppercase = white, lowercase = black)
