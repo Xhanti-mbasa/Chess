@@ -1,7 +1,7 @@
 
 grid = [[" " if (row + col) % 2 == 0 else "#" for col in range(8)] for row in range(8)]
 
-# Place pieces (uppercase = white, lowercase = black)
+
 grid[0] = ["R", "N", "B", "Q", "K", "B", "N", "R"]
 grid[1] = ["P"] * 8
 grid[6] = ["p"] * 8
