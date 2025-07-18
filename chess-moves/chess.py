@@ -1,4 +1,7 @@
-grid = [["#"] * 8 for _ in range(8)]
+# Create 8x8 grid with alternating colors:
+grid = [[" " if (row + col) % 2 == 0 else "#" for col in range(8)] for row in range(8)]
+
+# Place pieces (uppercase = white, lowercase = black)
 grid[0] = ["R", "N", "B", "Q", "K", "B", "N", "R"]
 grid[1] = ["P"] * 8
 grid[6] = ["p"] * 8
@@ -21,12 +24,13 @@ def move_pawn(start, end):
     er, ec = pos_to_index(end)
     piece = grid[sr][sc]
 
-    if piece == "P" and sc == ec and grid[er][ec] == "#" and sr - 1 == er:
+    if piece == "P" and sc == ec and grid[er][ec] in [" ", "#"] and sr - 1 == er:
         grid[er][ec] = "P"
-        grid[sr][sc] = "#"
-    elif piece == "p" and sc == ec and grid[er][ec] == "#" and sr + 1 == er:
+        # Restore the original color for the now empty square
+        grid[sr][sc] = " " if (sr + sc) % 2 == 0 else "#"
+    elif piece == "p" and sc == ec and grid[er][ec] in [" ", "#"] and sr + 1 == er:
         grid[er][ec] = "p"
-        grid[sr][sc] = "#"
+        grid[sr][sc] = " " if (sr + sc) % 2 == 0 else "#"
     else:
         print("Invalid pawn move")
 
