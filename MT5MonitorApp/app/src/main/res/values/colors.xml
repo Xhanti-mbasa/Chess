@@ -1,0 +1,11 @@
+<resources>
+    <color name="md_theme_dark_background">#050708</color>
+    <color name="md_theme_dark_onBackground">#E6F1F0</color>
+    <color name="md_theme_dark_surface">#10191A</color>
+    <color name="md_theme_dark_primary">#13C784</color>
+    <color name="md_theme_dark_secondary">#1F6FEB</color>
+    <color name="md_theme_dark_error">#CF6679</color>
+    <color name="rsi_green">#16FF96</color>
+    <color name="rsi_yellow">#FFC857</color>
+    <color name="rsi_red">#FF5A5F</color>
+</resources>

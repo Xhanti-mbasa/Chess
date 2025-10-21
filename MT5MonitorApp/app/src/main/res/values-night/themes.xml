@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.MT5Monitor" parent="Theme.Material3.Dark" />
+</resources>

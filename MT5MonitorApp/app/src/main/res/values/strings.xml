@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MT5 Monitor</string>
+    <string name="auto_trading">Auto Trading</string>
+    <string name="manual_buy">Manual Buy</string>
+    <string name="manual_sell">Manual Sell</string>
+    <string name="close_all">Close All Positions</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="positions">Positions</string>
+    <string name="settings">Settings</string>
+</resources>
