@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IsoScout</string>
+    <string name="pick_files">Select media or ISO files</string>
+    <string name="empty_state">No files selected yet.</string>
+    <string name="analysis_pending">Analyzing…</string>
+</resources>
