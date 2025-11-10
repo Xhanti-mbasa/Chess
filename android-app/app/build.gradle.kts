@@ -20,7 +20,7 @@ android {
             useSupportLibrary = true
         }
 
-        val defaultGeminiKey = "AIzaSyD7QwVUZ-TvGy_-vTuBdf594dZi_EvauHQ"
+        val defaultGeminiKey= ""
         buildConfigField(
             "String",
             "GEMINI_API_KEY",
